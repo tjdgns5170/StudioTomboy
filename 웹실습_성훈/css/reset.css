@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Playball&display=swap');
+
+@font-face {
+    font-family: "Bigilla";
+    src: url(../font/BIGILLA_DEMO/Bigilla-Bold.otf);
+    src: url(../font/BIGILLA_DEMO/Bigilla.otf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "TT Knickerbockers Grotesk Trial";
+    src: url(../font/tt_knickerbockers_grotesk/TT\ Knickerbockers\ Grotesk\ Trial.otf);
+    font-weight: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrap{
+    overflow: hidden;
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ol,ul,li{
+    list-style: none;
+}
+img,video,svg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+html,body{
+    font-family: "pretendard";
+    font-size: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #fff;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: #D9D9D9;
+    font-size: 15px !important;
+}

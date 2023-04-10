@@ -1,0 +1,46 @@
+            <header class="header-area">
+                <div class="main-header">
+                    <a href="#none" class="header-logo">
+                        <img src="../img/logo.jpg" alt="">
+                    </a>
+
+                    <ul class="main-menu">
+                        <li>
+                            <a href="#none" class="menu">STUDIO</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">ATELIER</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">COLLECTION</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">STORES</a>
+                        </li>
+                    </ul>
+
+                    <div class="icon-box">
+                        <div class="icon">
+                            <input type="search" placeholder="">
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="heart"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="bag"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="login"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>

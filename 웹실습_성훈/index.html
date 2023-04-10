@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <title>웹4_실습(studio tomboy)</title>
+</head>
+<body>
+    <div id="wrap">
+        <div class="main-banner">
+            <header class="header-area">
+                    <a href="#none" class="header-logo">
+                        STUDIO<br>
+                        TOMBOY
+                    </a>
+                    
+                    <a href="#none" id="hamburger">
+                        <span></span><span></span><span></span>
+                    </a>
+
+                    <ul class="main-menu">
+                        <li class="sub-menu studio">
+                            <a href="#none" class="menu studio">STUDIO</a>
+                            <ul class="sub-txt-box box1">
+                                <li>SPRING 2023</li>
+                                <li>WINTER 2022</li>
+                                <li>FALL 2022</li>
+                                <li>S/S 2022</li>
+                                <li>F/W 2021</li>
+                                <li>SUMMER 2021</li>
+                                <li>SPRING 2021</li>
+                                <li>WINTER 2020</li>
+                                <li>FALL 2020</li>
+                                <li>S/S 2020</li>
+                                <li>F/W 2020</li>
+                                <li>S/S 2019</li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu men">
+                            <a href="#none" class="menu men">MEN</a>
+                            <ul class="sub-txt-box box2">
+                                <li>SPRING 2023</li>
+                                <li>F/W 2022</li>
+                                <li>S/S 2022</li>
+                                <li>F/W 2021</li>
+                                <li>SUMMER 2021</li>
+                                <li>SPRING 2021</li>
+                                <li>WINTER 2020</li>
+                                <li>FALL 2020</li>
+                                <li>S/S 2020</li>
+                                <li>F/W 2019</li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu atelier">
+                            <a href="#none" class="menu atelier">ATELIER</a>
+                            <ul class="sub-txt-box box3">
+                                <li>SPRING 2023</li>
+                                <li>F/W 2022</li>
+                                <li>S/S 2022</li>
+                                <li>F/W 2021</li>
+                                <li>S/S 2021</li>
+                                <li>S/S 2020</li>
+                                <li>F/W 2020</li>
+                                <li>F/W 2019</li>
+                                <li>S/S 2019</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">ABOUT</a>
+                        </li>
+                        <li class="sub-menu collection">
+                            <a href="#none" class="menu collection">COLLECTION</a>
+                            <ul class="sub-txt-box box4">
+                                <li>S/S 2023</li>
+                                <li>F/W 2022</li>
+                                <li>S/S 2022</li>
+                                <li>2021</li>
+                                <li>2020</li>
+                                <li>2019</li>
+                                <li>2018</li>
+                                <li>2017</li>
+                                <li>2016</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">NEWS</a>
+                        </li>
+                        <li>
+                            <a href="#none" class="menu">STORES</a>
+                        </li>
+                    </ul>
+    
+                    <div class="icon-box">
+                        <div class="icon">
+                            <input type="search" placeholder="">
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="bag">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/></svg>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#none" class="login">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/></svg>
+                            </a>
+                        </div>
+                   </div>
+            </header>
+            
+            <div class="swiper mySwiper banner">
+                <div class="swiper-wrapper banner-box">
+                  <div class="swiper-slide banner-box1">
+                    <div class="banner-txt">
+                        <h2>ABOUT DENIM</h2>
+                        <p>봄을 위한 데님 아이템</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box2">
+                    <div class="banner-txt">
+                        <h2>X COLLECTION</h2>
+                        <p>톰보이의 새로운 컬렉션 by SIKI IM</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box3">
+                    <div class="banner-txt">
+                        <h2>BOY MEETS TOMBOY</h2>
+                        <p>23 S/S CAMPAIGN WITH 최정훈</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box4">
+                    <div class="banner-txt">
+                        <h2>SIGNATURE OUTER</h2>
+                        <p>톰보이 무드가 담긴 시그니처 아우터</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box5">
+                    <div class="banner-txt">
+                        <h2>SPRING LOOKBOOK</h2>
+                        <p>다가올 봄을 위한 스타일링</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box6">
+                    <div class="banner-txt">
+                        <h2>WE ARE TOMBOY</h2>
+                        <p>23 SPRING CAMPAIGN</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner6.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide banner-box7">
+                    <div class="banner-txt">
+                        <h2>TOMBOY SCOUT</h2>
+                        <p>그와 그녀를 위한 스타일</p>
+                    </div>
+                    <div class="banner-img">
+                        <img src="./img/banner7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>
+
+              <!-- sec-1  -->
+     <section class="section sec-1">
+        <div class="container">
+            <div class="sec-1-txt">
+                <h2>STUDIO TOMBOY X BY 'SIKI IM'</h2>
+                <p>SIKI IM은 미국의 뉴욕을 주 무대로 활발히 활동하고 있는 젊은 패션디자이너로,<br>
+                    런던의 옥스퍼드 대학에서 건축학을 전공 후 2009년 뉴욕에서 SIKI IM 브랜드를 런칭하며<br>
+                    세계적인 입지를 쌓은 디자이너입니다.
+                </p>
+            </div>
+            <div class="container-imgbox">
+                <div class="sec-1-img">
+                    <img src="./img/sec-1-1.jpg" alt="">
+                </div>
+                <div class="sec-1-img">
+                    <img src="./img/sec-1-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- sec-2 -->
+     <section class="section sec-2">
+        <div class="container">
+            <div class="sec-2-imgbox">
+                <h1 class="btn"></h1>
+                <a href="#none" class="sec-2-img">
+                    <img src="./img/sec-2-1.jpg" alt="">
+                </a>
+                <a href="#none" class="sec-2-img">
+                    <img src="./img/sec-2-2.jpg" alt="">
+                </a>
+                <a href="#none" class="sec-2-img">
+                    <img src="./img/sec-2-3.jpg" alt="">
+                </a>
+                <a href="#none" class="sec-2-img">
+                    <img src="./img/sec-2-4.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="sec-2-txt">
+                <div class="sec-2-main-txt">
+                    <h2>BE PRESENT AND EMBRACE ALL</h2>
+                </div>
+                <p>성별과 시간의 경계를 넘어<br>
+                    조화스럽게 완성하는 '23 SPRING CAMPAIGN' 이번 시즌은<br>
+                    스튜디오 톰보이의 90년대 무드를 배경으로<br>
+                    빈티지한 레이어링과 레트로한 컬러로<br>
+                    담아 냈습니다.
+                </p>
+            </div>
+        </div>
+     </section>
+
+     <!-- sec-3 -->
+     <section class="section sec-3">
+        <div class="container">
+            <div class="sec-3-txtbox">
+                <div class="sec-3-content1">
+                    <div data-aos="flip-left" class="sec-3-txt sec-3-txt1">
+                        <p>
+                            스카우트 패션의 모티브를 반영한<br>
+                            STUDIO TOMBOY의<br>
+                            특별한 '23 S/S 캡슐 컬렉션'<br>
+                            TOMBOY SCOUT를 소개합니다.
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in" class="sec-3-txt sec-3-txt2">
+                        <p>
+                            TOMBOY SCOUT CATALOG
+                        </p>
+                    </div>
+                </div>
+                <div class="sec-3-content2">
+                    <div data-aos="fade-down" class="sec-3-txt sec-3-txt3"> 
+                        <p>
+                            '23 SPRING/SUMMER CAPSURE COLLECTION'
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sec-3-imgbox">
+                <div class="sec-3-box1">
+                    <div data-aos="fade-up" class="sec-3-img">
+                        <img src="./img/sec-3-1.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-left" class="sec-3-img">
+                        <img src="./img/sec-3-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sec-3-box2">
+                    <div data-aos="fade-up" class="sec-3-img">
+                        <img src="./img/sec-3-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- sec-4 -->
+     <section class="section sec-4">
+        <div class="container">
+            <h2>NEW ARRIBAL</h2>
+            <div class="sec-4-main-box1">
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-1.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-1-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>샐비지 다크 데님</p>
+                        <p>￦259,000</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-2.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-2-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>밑단 스트링 크랍 셔츠형</p>
+                        <p>￦259,000</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-3.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-3-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>폴딩 포인트 팬츠</p>
+                        <p>￦95,520</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-4.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-4-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>스카시 가디건</p>
+                        <p>￦219,000</p>
+                    </div>
+                </div>
+            </div>
+            <h2>BEST SELLERS</h2>
+            <div class="sec-4-main-box2">
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-5.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-5-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>안감 체크 후드 점퍼</p>
+                        <p>￦197,400</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-6.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-6-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>크롭 데님 자켓</p>
+                        <p>￦129,000</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-7.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-7-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>허리 밴딩 데님 롱스커트</p>
+                        <p>￦109,000</p>
+                    </div>
+                </div>
+                <div class="sec-4-box">
+                    <div class="sec-4-img">
+                        <div class="b_box">
+                            <img src="./img/sec-4-8.jpg" alt="">
+                        </div>
+                        <div class="f_box">
+                            <img src="./img/sec-4-8-hover.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec-4-txt">
+                        <h4>STUDIO TOMBOY</h4>
+                        <p>베이직 스트라이프 티셔츠</p>
+                        <p>￦59,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+     <!-- sec-5 -->
+     <section class="section sec-5">
+        <div class="container">
+            <div class="sec-5-txt">
+                <h2>SEASON CAMPAIGN</h2>
+            </div>
+            <div class="sec-5-box">
+                <video src="./video/sec5-video.mp4" autoplay muted loop playsinline data-keeping></video>
+            </div>
+        </div>
+     </section>
+
+     <!-- 푸터 영역 -->
+     <footer>
+        <div class="footer-1">
+            <a href="#none">
+                <h3>(유료)1644-4490</h3>
+            </a>
+                <div class="f-txt1">
+                    <a href="#none">
+                        <p>고객센터</p>
+                    </a>
+                    <a href="#none">
+                        <p>공지사항</p>
+                    </a>
+                    <a href="#none">
+                        <p>카톡상담</p>
+                    </a>
+                    <a href="#none">
+                        <p>ARS</p>
+                    </a>
+                </div>
+        </div>
+        <div class="footer-2">
+            <div class="f-b-box">
+                <div class="f-txt2">
+                    <a href="#none">
+                        <p>회사소개</p>
+                    </a>
+                    <a href="#none">
+                        <p>입점상담</p>
+                    </a>
+                    <a href="#none">
+                        <p>매장안내</p>
+                    </a>
+                    <a href="#none">
+                        <p>이용약관</p>
+                    </a>
+                    <a href="#none">
+                        <p>개인정보정리방침</p>
+                    </a>
+                </div>
+                <div class="f-txt3">
+                    <a href="#none">
+                        <p>주소: 서울특별시 강남구 도산대로 449(청담동)</p>
+                    </a>
+                </div>
+                <div class="f-b-iconbox">
+                    <a href="#none">
+                        <div class="f-b-icon">
+                            <img src="./img/youtube.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="f-b-icon">
+                            <img src="./img/instagram.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#none">
+                        <div class="f-b-icon">
+                            <img src="./img/facebook.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="f-txt4">
+                    <a href="#none">
+                        <p>COPYRIGHT © STUDIO TOMBOY. All RIGHTS RESERVED.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </footer>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+    <script> AOS.init(); </script> 
+</body>
+<script src="./js/script.js"></script>
+</html>
